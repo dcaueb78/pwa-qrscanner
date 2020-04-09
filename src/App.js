@@ -25,7 +25,7 @@ function App() {
 
   const h1Style = {
     position: "relative",
-    marginTop: "95%",
+    marginTop: "55%",
     bottom: 0,
   };
 
