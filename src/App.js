@@ -4,7 +4,7 @@ import QrReader from "react-qr-reader";
 
 function App() {
   const QRCodeDelay = 0;
-  const [message, setMessage] = useState("oioi");
+  const [message, setMessage] = useState("Escaneia ai");
 
   function handleScan(QRCodeScannedMessage) {
     if (QRCodeScannedMessage) {
@@ -21,13 +21,13 @@ function App() {
   }
 
   const previewStyle = {
-    height: 100,
-    width: "100%",
+    height: "500px",
+    width: "500px",
     margin: 15,
   };
   return (
     <div className="App">
-      <div>
+      <div className="flex">
         <QrReader
           resolution={1920}
           facingMode="environment"
