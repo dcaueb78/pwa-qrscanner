@@ -3,7 +3,7 @@ import "./App.css";
 import QrReader from "react-qr-reader";
 
 function App() {
-  const QRCodeDelay = 0;
+  const QRCodeDelay = 100;
   const [message, setMessage] = useState("Escaneia ai");
 
   function handleScan(QRCodeScannedMessage) {
@@ -14,9 +14,6 @@ function App() {
   }
 
   function handleQRCodeScanError() {
-    // toast.error(
-    //   "Houve um problema na leitura do código QR, poderia tentar novamente?"
-    // );
     console.log("oi");
   }
 
