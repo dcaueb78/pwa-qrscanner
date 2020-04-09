@@ -26,7 +26,6 @@ function App() {
   const h1Style = {
     position: "relative",
     marginTop: "55%",
-    bottom: 0,
   };
 
   const flex = { display: "flex", flexDirection: "column", height: "100%" };
