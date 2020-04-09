@@ -18,13 +18,14 @@ function App() {
   }
 
   const previewStyle = {
-    height: "500px",
-    width: "500px",
+    height: "375px",
+    width: "95%",
     margin: 15,
   };
 
   const h1Style = {
-    position: "absolute",
+    position: "relative",
+    marginTop: "95%",
     bottom: 0,
   };
 
