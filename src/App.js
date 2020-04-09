@@ -25,9 +25,17 @@ function App() {
     width: "500px",
     margin: 15,
   };
+
+  const h1Style = {
+    position: "absolute",
+    bottom: 0,
+  };
+
+  const flex = { display: "flex", flexDirection: "column", height: "100%" };
+
   return (
     <div className="App">
-      <div className="flex">
+      <div style={flex}>
         <QrReader
           resolution={1920}
           facingMode="environment"
@@ -37,7 +45,7 @@ function App() {
           onScan={handleScan}
           className="QRcodeScaner"
         />
-        <h1>{message}</h1>
+        <h1 style={h1Style}>{message}</h1>
       </div>
     </div>
   );
