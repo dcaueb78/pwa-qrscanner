@@ -9,12 +9,11 @@ function App() {
   function handleScan(QRCodeScannedMessage) {
     if (QRCodeScannedMessage) {
       setMessage(QRCodeScannedMessage);
-      console.log(QRCodeScannedMessage);
     }
   }
 
   function handleQRCodeScanError() {
-    console.log("oi");
+    console.log("Houve um erro");
   }
 
   const previewStyle = {
